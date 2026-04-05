@@ -16,7 +16,7 @@ SOVP is not an SEO tool. It is a new category: cryptographic infrastructure vali
 ## Quick Links
 
 - 🔍 **Free QuickScan:** https://validator.litzki-systems.com
-- ⚙️ **Full Validator:** https://engine.litzki-systems.org
+- ⚙️ **Full Validator:** [https://engine.litzki-systems.org](https://litzki-systems.com/sovp-full-validator)
 - 🌐 **Company & Protocol:** https://litzki-systems.com
 - 💼 **LinkedIn:** https://www.linkedin.com/company/litzki-systems-llc
 
