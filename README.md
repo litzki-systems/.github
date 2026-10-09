@@ -1,27 +1,42 @@
-# .github
-Litzki Systems LLC — Sovereign Validation Protocol (SOVP). Cryptographic infrastructure validation for the agentic web. Patent Pending U.S. Prov. App. No. 64/005,737. Signal Sovereignty Established.
-
 # Litzki Systems LLC
-
-**The cryptographic trust anchor for the agentic web.**
-
-Litzki Systems LLC develops and operates the Sovereign Validation Protocol (SOVP) — a deterministic, cryptographic validation protocol that determines whether a web infrastructure is readable, trustworthy, and discoverable for autonomous AI systems.
 
 ## Sovereign Validation Protocol (SOVP)
 
-SOVP validates across 180+ deterministic parameters at Layer 0 — before any data ingestion occurs. The result is a tamper-proof, Ed25519-signed certificate: **CERTIFIED** or **FAILED**. No heuristics. No gray areas.
+SOVP is a protocol for checking, before ingestion, that a signed identity document was
+produced by the holder of the Ed25519 key published in DNS for a host.
 
-SOVP is not an SEO tool. It is a new category: cryptographic infrastructure validation for the agentic web.
+Specification: IETF Internet-Draft
+[draft-litzki-sovp-04](https://datatracker.ietf.org/doc/draft-litzki-sovp/) — Individual
+Submission, Intended Status: Experimental.
 
-## Quick Links
+## Verdicts
 
-- 🔍 **Free QuickScan:** https://validator.litzki-systems.com
-- ⚙️ **Full Validator:** [https://engine.litzki-systems.org](https://litzki-systems.com/sovp-full-validator)
-- 🌐 **Company & Protocol:** https://litzki-systems.com
-- 💼 **LinkedIn:** https://www.linkedin.com/company/litzki-systems-llc
+The SOVP scanner reports one of three verdicts: **CERTIFIED**, **NOT_CONFORMANT** or
+**INCOMPLETE**. INCOMPLETE means the host could not be measured, for example because
+access was blocked during the scan — it is not a statement about the host's quality.
 
-## Patent & IP
+Verdicts are reported in the scan result. They are not part of the signed identity
+document.
 
-Patent Pending — U.S. Provisional Patent Application No. 64/005,737  
-Signal Sovereignty Established.  
-© 2026 Litzki Systems LLC. All rights reserved.
+## Implementations
+
+- [sovp-python](https://github.com/litzki-systems/sovp-python) — reference
+  implementation, Apache 2.0 (PyPI: [`sovp`](https://pypi.org/project/sovp/))
+- [sovp-agentrust-bridge](https://github.com/litzki-systems/sovp-agentrust-bridge) —
+  maps caller-supplied fields onto an Ed25519-signed AgenTrust TRACE v0.2 record,
+  Apache 2.0
+
+## Services
+
+- Free QuickScan: https://validator.litzki-systems.com
+- Full Validator: https://litzki-systems.com/sovp-full-validator
+- Company and protocol: https://litzki-systems.com
+
+## Contact
+
+https://litzki-systems.com/contact
+
+---
+
+Patent Pending — U.S. Provisional Patent Application No. 64/005,737
+© 2026 Litzki Systems LLC
