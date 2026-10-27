@@ -1,42 +1,43 @@
-# Litzki Systems LLC
+# Litzki Systems
 
-## Sovereign Validation Protocol (SOVP)
+Technical SEO and custom software by Thorsten Litzki: reporting portals, automation, tools and pages that search engines and AI agents can read.
 
-SOVP is a protocol for checking, before ingestion, that a signed identity document was
-produced by the holder of the Ed25519 key published in DNS for a host.
+**Measured, not estimated.** Every tool here works with real data and shows where each number comes from. No simulated scores, no AI-invented metrics.
 
-Specification: IETF Internet-Draft
-[draft-litzki-sovp-04](https://datatracker.ietf.org/doc/draft-litzki-sovp/) — Individual
-Submission, Intended Status: Experimental.
+## Open-source tools
 
-## Verdicts
+| Repository | What it does | Licence |
+|---|---|---|
+| [seo-content-workflow](https://github.com/litzki-systems/seo-content-workflow) | Claude skill for German-language SEO copy: seven checked stages from brief to CMS package, with no invented experience, sources or metrics. Plugin for Claude Code, ZIP for claude.ai. | MIT |
+| [briefing-generator](https://github.com/litzki-systems/briefing-generator) | 12 free briefing templates: fill them in your browser and hand them over as a fillable PDF. Live in [German](https://thorsten-litzki.de/briefing-aufbau-erstellen/) and [English](https://thorsten-litzki.de/en/blog/creating-a-briefing-structure/). | MIT |
+| [seo-forecast](https://github.com/litzki-systems/seo-forecast) | Forecasts clicks, leads and ROI from search volume, position and device, with CTR curves whose source you can see. | MIT |
+| [infra-check](https://github.com/litzki-systems/infra-check) | Checks a domain on five machine-readable signals: JSON-LD, llms.txt, robots.txt for AI crawlers, security headers and TLS. Command line, also for domain lists. | MIT |
+| [chatgpt-render-check](https://github.com/litzki-systems/chatgpt-render-check) | Simulates how ChatGPT reportedly splits a fetched page into text chunks. Across 1,000 domains, a plain text conversion cut differently on 363 of 376 multi-chunk pages. | MIT |
+| [gsc-ga4-export](https://github.com/litzki-systems/gsc-ga4-export) | Pulls Google Search Console and GA4 data, merges both sources and exports XLSX reports. Runs locally, no SaaS, no data leaving your machine. | MIT |
 
-The SOVP scanner reports one of three verdicts: **CERTIFIED**, **NOT_CONFORMANT** or
-**INCOMPLETE**. INCOMPLETE means the host could not be measured, for example because
-access was blocked during the scan — it is not a statement about the host's quality.
+Free online: [QuickScan](https://validator.litzki-systems.com) checks how well search engines and AI agents can read a domain and how well it is secured.
 
-Verdicts are reported in the scan result. They are not part of the signed identity
-document.
+## Research: Sovereign Validation Protocol (SOVP)
 
-## Implementations
+SOVP is a protocol for checking, before ingestion, that a signed identity document was produced by the holder of the Ed25519 key published in DNS for a host. It is research and an open specification, not a product.
 
-- [sovp-python](https://github.com/litzki-systems/sovp-python) — reference
-  implementation, Apache 2.0 (PyPI: [`sovp`](https://pypi.org/project/sovp/))
-- [sovp-agentrust-bridge](https://github.com/litzki-systems/sovp-agentrust-bridge) —
-  maps caller-supplied fields onto an Ed25519-signed AgenTrust TRACE v0.2 record,
-  Apache 2.0
+- Specification: IETF Internet-Draft [draft-litzki-sovp-04](https://datatracker.ietf.org/doc/draft-litzki-sovp/), Individual Submission, Intended Status: Experimental
+- Reference implementation: [sovp-python](https://github.com/litzki-systems/sovp-python), Apache 2.0 (PyPI: [`sovp`](https://pypi.org/project/sovp/))
+- [sovp-agentrust-bridge](https://github.com/litzki-systems/sovp-agentrust-bridge): maps caller-supplied fields onto an Ed25519-signed AgenTrust TRACE v0.2 record, Apache 2.0
 
-## Services
+A scan reports one of three verdicts: **CERTIFIED**, **NOT_CONFORMANT** or **INCOMPLETE**. INCOMPLETE means the host could not be measured, for example because access was blocked. It is not a statement about the host's quality. Verdicts are part of the scan result, not of the signed identity document.
 
-- Free QuickScan: https://validator.litzki-systems.com
-- Full Validator: https://litzki-systems.com/sovp-full-validator
-- Company and protocol: https://litzki-systems.com
+## Work with me
 
-## Contact
-
-https://litzki-systems.com/contact
+Custom development on request: SEO reporting portals, dashboards, automation and websites. Contact: https://litzki-systems.com/contact
 
 ---
 
-Patent Pending — U.S. Provisional Patent Application No. 64/005,737
+### Kurz auf Deutsch
+
+Technische SEO und Individualsoftware von Thorsten Litzki. Grundsatz: **gemessen statt geschätzt**. Alle Werkzeuge oben sind Open Source (MIT): ein Claude-Skill für deutschsprachige SEO-Texte, ein Briefing-Generator, ein SEO-Prognose-Rechner, zwei Prüfwerkzeuge für maschinenlesbare Signale und ein lokaler Export für Search Console und GA4. Kostenlos online: der [QuickScan](https://validator.litzki-systems.com/?lang=de). SOVP ist Forschung und offenes Protokoll, kein Produkt. Individuelle Entwicklung auf Anfrage: https://litzki-systems.com/contact
+
+---
+
+Patent Pending, U.S. Provisional Patent Application No. 64/005,737
 © 2026 Litzki Systems LLC
