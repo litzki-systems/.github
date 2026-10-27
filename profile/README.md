@@ -9,7 +9,7 @@ Technical SEO and custom software by Thorsten Litzki: reporting portals, automat
 | Repository | What it does | Licence |
 |---|---|---|
 | [seo-content-workflow](https://github.com/litzki-systems/seo-content-workflow) | Claude skill for German-language SEO copy: seven checked stages from brief to CMS package, with no invented experience, sources or metrics. Plugin for Claude Code, ZIP for claude.ai. | MIT |
-| [briefing-generator](https://github.com/litzki-systems/briefing-generator) | 12 free briefing templates: fill them in your browser and hand them over as a fillable PDF. Live in [German](https://thorsten-litzki.de/briefing-aufbau-erstellen/) and [English](https://thorsten-litzki.de/en/blog/creating-a-briefing-structure/). | MIT |
+| [briefing-generator](https://github.com/litzki-systems/briefing-generator) | 12 free briefing templates: fill them in your browser and hand them over as a fillable PDF. Live in [German](https://litzki-systems.com/de/werkzeuge/briefing-aufbau-erstellen/) and [English](https://litzki-systems.com/tools/how-to-write-a-brief/). | MIT |
 | [seo-forecast](https://github.com/litzki-systems/seo-forecast) | Forecasts clicks, leads and ROI from search volume, position and device, with CTR curves whose source you can see. | MIT |
 | [infra-check](https://github.com/litzki-systems/infra-check) | Checks a domain on five machine-readable signals: JSON-LD, llms.txt, robots.txt for AI crawlers, security headers and TLS. Command line, also for domain lists. | MIT |
 | [chatgpt-render-check](https://github.com/litzki-systems/chatgpt-render-check) | Simulates how ChatGPT reportedly splits a fetched page into text chunks. Across 1,000 domains, a plain text conversion cut differently on 363 of 376 multi-chunk pages. | MIT |
